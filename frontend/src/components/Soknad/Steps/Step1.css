@@ -1,0 +1,140 @@
+.soknad-purpose {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 10px;
+  background-color: #eaddff;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.soknad-step1-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.soknad-radio {
+  cursor: pointer;
+  display: none;
+}
+
+.step1-radiobutton {
+  background-color: transparent;
+  color: black;
+  border: none;
+  margin-right: 0.25rem;
+}
+
+.step1-radiobutton:hover {
+  cursor: pointer;
+}
+
+.soknad-radio-text {
+  margin: 5px 10px;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.step1-radiobutton:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px black;
+}
+
+.step1-radiobutton:focus-visible {
+  outline-style: solid;
+  outline-width: medium;
+  outline-color: black;
+  border-radius: 5px;
+  outline-offset: 0.1rem;
+}
+
+.soknad-radio:checked ~ .soknad-radio-text {
+  background-color: #bd00ff;
+  color: white;
+  border-radius: 5px;
+}
+
+.soknad-radio:checked ~ .step1-radiobutton {
+  background-color: #bd00ff;
+  color: white;
+  border-radius: 5px;
+}
+
+.step1-input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.soknad-label {
+  font-size: 1.1rem;
+  font-weight: 750;
+  margin-bottom: 5px;
+}
+
+.soknad-input {
+  width: 300px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 1.75rem;
+}
+.step1-error {
+  margin: -1rem 0 1.5rem 0;
+}
+
+.step1-table {
+  border-collapse: collapse;
+  margin: 2rem auto;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+.step1-table th:first-of-type {
+  border-top-left-radius: 5px;
+}
+.step1-table th:last-of-type {
+  border-top-right-radius: 5px;
+}
+
+.step1-table th {
+  text-align: left;
+  background-color: #bd00ff;
+  color: white;
+  padding: 0.5rem 1rem 0.5rem 5px;
+  font-weight: 500;
+}
+
+.step1-table td {
+  padding: 0 1.5rem 0 5px;
+  border: 1px solid #e5e5e5;
+}
+
+.step1-table tr:nth-child(even) {
+  background-color: #eaddff;
+}
+
+@media only screen and (max-width: 600px) {
+  .soknad-input {
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 1.75rem;
+  }
+
+  .soknad-purpose {
+    padding: 5px;
+  }
+
+  .soknad-step1-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}

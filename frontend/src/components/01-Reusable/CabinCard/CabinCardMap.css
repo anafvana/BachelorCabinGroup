@@ -1,0 +1,122 @@
+.cabincardmap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  top: -200px;
+}
+
+.card-map {
+  height: 150px;
+  width: 300px;
+  margin: 1rem 0 1rem 0;
+  padding: 0.25rem;
+
+  border-radius: 0.25rem;
+  border: 2px solid #bd00ff;
+  box-shadow: 0px 0px 2px 2px #e5e5e5;
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
+
+  position: relative;
+}
+
+.card-map-title {
+  margin: 5px 0 0 5px;
+  color: #bd00ff;
+}
+
+.card-map-address {
+  margin: 2px 0 0 5px;
+  font-weight: 100;
+}
+
+.bed {
+  grid-area: bedIcon;
+}
+.bath {
+  grid-area: bathIcon;
+}
+.bedrooms {
+  grid-area: textBedroom;
+}
+.badrooms {
+  grid-area: textBath;
+}
+
+.card-map-btn {
+  grid-area: btn;
+}
+
+.card-map-features {
+  margin: 5px;
+  display: grid;
+  grid-template-areas:
+    'bedIcon textBedroom textBedroom'
+    'bathIcon textBath btn';
+  grid-template-columns: auto 1fr 1fr;
+  align-items: center;
+}
+
+.card-map-text {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.card-map-btn {
+  background-color: #eaddff;
+  border: 0;
+  font-weight: 750;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.card-map-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card-map-btn:focus-visible {
+  text-decoration: underline;
+  outline-style: solid;
+  outline-width: medium;
+  outline-color: black;
+  outline-offset: 0.25rem;
+}
+
+.pigeon-overlays > div:nth-child(1) > div:not(.pigeon-click-block) {
+  background: #bd00ff !important;
+  border-color: #eaddff !important;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .cabincardmap {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .card-map {
+    height: 175px;
+    width: 200px;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+
+    border-radius: 0.25rem;
+    background-color: white;
+    overflow: hidden;
+    z-index: 2;
+
+    position: relative;
+  }
+
+  .card-map-features {
+    grid-template-areas:
+      'bedIcon textBedroom textBedroom'
+      'bathIcon textBath textBath'
+      'btn btn btn';
+  }
+}

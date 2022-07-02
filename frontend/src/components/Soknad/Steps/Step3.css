@@ -1,0 +1,61 @@
+.soknad-step3-antall {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.step3-error {
+  margin: -1.5rem 0 0 0;
+}
+
+.soknad-error-cabins {
+  text-align: center;
+  margin-top: 0;
+}
+
+.step3-radio {
+  margin-bottom: 4.75rem;
+}
+
+.soknad-step3-next {
+  width: fit-content;
+  font-weight: 1000;
+  font-size: 4rem;
+  color: #bd00ff;
+  margin: 0 auto;
+  transform: rotate(90deg);
+  border-radius: 10px;
+}
+
+.soknad-step3-cabins {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 2rem;
+}
+.textarea-soknad {
+  margin-bottom: 0;
+}
+.step3-italic {
+  font-style: italic;
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+#comments {
+  height: 50px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .soknad-step3-cabins {
+    grid-template-columns: auto auto;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .soknad-step3-cabins {
+    margin: 0;
+  }
+}

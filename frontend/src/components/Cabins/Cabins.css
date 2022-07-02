@@ -1,0 +1,31 @@
+.cabins-display {
+  width: 90%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2rem;
+}
+
+.cabins-error-empty {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1600px) {
+  .cabins-display {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cabins-display {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cabins-display {
+    grid-template-columns: auto;
+  }
+}
